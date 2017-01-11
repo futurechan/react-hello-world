@@ -1,21 +1,20 @@
 import React, { Component, PropTypes } from 'react';
 import { render } from 'react-dom'
-import { Link } from 'react-router';
+
+import Nav from './nav/Nav'
+import SideMenu from './sideMenu/SideMenu'
+import styles from './App.css'
 
 export default class App extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <Link to="/">Dashboard</Link>
+                <Nav/>
+                <SideMenu/>
+
+                <div className={styles.mainContent}>
+                    {this.props.children}
                 </div>
-                <div>
-                    <Link to="/about">About</Link>
-                </div>
-                <br/>
-                <hr/>
-                <br/>
-                {this.props.children}
             </div>
         );
     }
