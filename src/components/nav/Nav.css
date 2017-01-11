@@ -1,11 +1,8 @@
-.sideNav {
-    width: 170px;
-    padding: 0;
-    position: fixed;
-    left: 0;
-    z-index: 1;
-    height: 100%;
-    text-transform: uppercase;
+
+.navBarNavMenu {
+    float:right;
+    left: auto;
+    right: 0;
 }
 
 .navMenu {
@@ -21,4 +18,14 @@
     font-family: "Montserrat Regular", montserrat-regular;
     font-size: 12px;
     */
+}
+
+.sideNav {
+    width: 170px;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    text-transform: uppercase;
 }

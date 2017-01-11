@@ -1,15 +1,15 @@
 import React, { Component, PropTypes } from 'react';
 import { render } from 'react-dom'
 
-import Nav from './nav/Nav'
-import SideMenu from './sideMenu/SideMenu'
+import TopNav from './nav/TopNav'
+import SideMenu from './nav/SideMenu'
 import styles from './App.css'
 
 export default class App extends Component {
     render() {
         return (
             <div>
-                <Nav/>
+                <TopNav/>
                 <SideMenu/>
 
                 <div className={styles.mainContent}>
